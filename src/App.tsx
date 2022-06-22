@@ -52,7 +52,7 @@ function App() {
             value={newTask}
             onChange={handleOnChange}
           />
-          <button disabled={!newTask} type="submit" className='bg-blue-700 flex justify-center items-center p-4 rounded-lg gap-2 text-white text-sm disabled:opacity-75 disabled:cursor-not-allowed'>
+          <button disabled={!newTask} type="submit" className='bg-blue-700 flex justify-center items-center p-4 rounded-lg gap-2 text-white text-sm disabled:opacity-75 disabled:bg-gray-300 disabled:cursor-not-allowed'>
             <span className="font-bold">Criar</span>
             <PlusCircle size={16} weight="bold" className='relative top[2px]' />
           </button>
