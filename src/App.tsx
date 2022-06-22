@@ -75,14 +75,16 @@ function App() {
         <div className="mt-6">
           {
             tasks.length ? 
-              tasks.map(task => (
-                <TaskCard 
-                  key={task.id} 
-                  task={task} 
-                  onToggleDone={handleToggleDone}
-                  onDelete={handleDelete}
-                />
-              )) : (
+              <div className='flex flex-col gap-3'>
+                {tasks.map(task => (
+                  <TaskCard 
+                    key={task.id} 
+                    task={task} 
+                    onToggleDone={handleToggleDone}
+                    onDelete={handleDelete}
+                  />
+                ))}
+              </div> : (
                 <div className="flex flex-col justify-center items-center text-gray-300 py-16 px-6 rounded-lg border-t border-gray-400">
                   <Clipboard />
                   <strong className="mt-4">Você ainda não tem tarefas cadastradas</strong>
