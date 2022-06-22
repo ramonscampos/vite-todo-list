@@ -44,7 +44,7 @@ function App() {
       <header className="h-[200px] bg-gray-700 flex justify-center items-center">
         <Logo />
       </header>
-      <main className="max-w-3xl w-full mx-auto">
+      <main className="max-w-3xl w-full mx-auto px-4">
         <form onSubmit={handleSubmitForm} className="flex gap-2 mt-[-29px]">
           <input 
             className="flex-1 bg-gray-500 border border-gray-700 rounded-lg placeholder:text-gray-300 p-4 text-gray-300" 
